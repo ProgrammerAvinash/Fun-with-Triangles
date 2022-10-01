@@ -1,7 +1,9 @@
 * {
   margin: 0;
 }
-
+a {
+  text-decoration: none;
+}
 header {
   height: 12vh;
   background-color: #011cb7;
@@ -10,9 +12,6 @@ header {
   padding: 1.5rem;
   display: inline-flex;
   width: 100%;
-}
-a {
-  color: aqua;
 }
 
 h1 {
@@ -29,48 +28,53 @@ h1 {
   top: 3rem;
   right: 1rem;
 }
-nav {
-  padding: 1rem;
-  cursor: pointer;
-  display: inline-block;
-}
-nav:hover {
-  color: antiquewhite;
-}
-nav:visited {
-  color: aqua;
-}
 
-.isTriangleContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-}
-h2 {
-  font-size: xx-large;
-  font-weight: bolder;
-}
-
-label {
-  padding: 1rem;
-  font-size: x-large;
-}
 input {
   border: 2px solid #011cb7;
   border-radius: 10px;
   height: 2rem;
   width: 15rem;
 }
+a {
+  color: aqua;
+  padding: 1rem;
+  cursor: pointer;
+  display: inline-block;
+}
+a:hover {
+  color: antiquewhite;
+}
+
+.Main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 2rem; */
+  padding-top: none;
+}
+
+p {
+  font-size: x-large;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+label {
+  padding: 1rem;
+  padding-right: 2rem;
+  font-size: x-large;
+}
 
 button {
   padding: 1rem;
   border-radius: 10px;
   margin: 2rem;
+  width: 20rem;
   font-size: large;
   background: aqua;
   cursor: pointer;
+  text-align: center;
 }
 
 button:hover {

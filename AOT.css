@@ -41,7 +41,7 @@ nav:visited {
   color: aqua;
 }
 
-.isTriangleContainer {
+.areaOfTriangle {
   display: flex;
   flex-direction: column;
   justify-content: center;
