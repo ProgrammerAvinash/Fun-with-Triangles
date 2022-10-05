@@ -11,7 +11,7 @@ header {
   display: inline-flex;
   width: 100%;
 }
-a {
+nav a {
   color: aqua;
 }
 
@@ -36,9 +36,6 @@ nav {
 }
 nav:hover {
   color: antiquewhite;
-}
-nav:visited {
-  color: aqua;
 }
 
 .areaOfTriangle {
@@ -75,4 +72,47 @@ button {
 
 button:hover {
   box-shadow: 4px 2px;
+}
+
+button:hover {
+  font-weight: bold;
+  background: #055491;
+  color: aliceblue;
+}
+
+.Social-Links {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem;
+}
+
+a::before {
+  /* content: ''; */
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
+  /* width: 100%; */
+  /* height: 100%; */
+  /* border-radius: 50%; */
+  background: #055491;
+  transition: 0.5s;
+  transform: scale(0.9);
+  z-index: -1;
+}
+i:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #013258;
+}
+a {
+  margin: 2rem;
+  height: 20vh;
+}
+
+.Social-Links i {
+  font-size: 3.5em;
+  padding: 8px;
+}
+i:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s;
 }
