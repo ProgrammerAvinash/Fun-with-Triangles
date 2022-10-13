@@ -46,7 +46,8 @@
 
         var hypt = Math.hypot(inputValueA.value, inputValueB.value);
         console.log(hypt);
-        outputHyptValue.innerText = `Hypotenuse is ${hypt}`;
+        var hyptPrint = hypt.toFixed();
+        outputHyptValue.innerText = `Hypotenuse is ${hyptPrint}`;
         if (valueA <= 0 || valueB <= 0 || valueA == "" || valueB == "") {
           outputHyptValue.innerText = `Enter valid Input`;
         }

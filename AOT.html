@@ -119,11 +119,13 @@
           (semiperimeter - thirdSideValue);
         var sqrtValue = Number.parseInt(Math.sqrt(calculation));
         console.log(sqrtValue);
-        if (sqrtValue === 0) {
+
+        if (sqrtValue <= 0 || sqrtValue === "") {
           AotValue.innerText =
             "Enter valid side lengths such that each side lengths";
         } else {
-          AotValue.innerText = `Area of a triangle using heron's formula is ${sqrtValue} units`;
+          var sqrtValuePrint = sqrtValue.toFixed();
+          AotValue.innerText = `Area of a triangle using heron's formula is ${sqrtValuePrint} units`;
         }
       }
 
