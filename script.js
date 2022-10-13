@@ -18,6 +18,9 @@ const onisTriangleClicked = function () {
   const angleNum2 = Number.parseInt(angleIn2);
   // console.log(angleLast0, angleLast1, angleLast2);
   var AddedValue = angleNum0 + angleNum1 + angleNum2;
+  if (angleNum0 <= 0 || angleNum1 <= 0 || angleIn2 <= 0) {
+    return (lastLineBtn.innerText = "Please Enter Valid Angle");
+  }
   if (AddedValue == 180) {
     return (lastLineBtn.innerText = "It's A Triangle");
   } else {
